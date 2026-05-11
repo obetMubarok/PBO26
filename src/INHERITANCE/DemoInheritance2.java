@@ -13,7 +13,9 @@ class BangunDatar{
 }
 class Persegi extends BangunDatar{
     double sisi;
-
+    
+    //karena pada superclass terdapat constructor, maka
+    //subclass wajib super pada var yang ada di constructor superclass
     public Persegi(double sisi, String warna) {
         super(warna);
         this.sisi = sisi;
@@ -31,6 +33,8 @@ class Persegi extends BangunDatar{
         return sisi*sisi;
     }
 }
+//karena pada superclass terdapat constructor, maka
+//subclass wajib super pada var yang ada di constructor superclass
 class Lingkaran extends BangunDatar{
     double radius;
     public Lingkaran(double radius, String warna){
@@ -55,6 +59,7 @@ public class DemoInheritance2 {
         System.out.println(r1.luas());
         
         Persegi p1 = new Persegi(6, "Kuning");
+        System.out.println(p1.luas());
         
     }
 }

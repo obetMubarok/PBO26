@@ -11,7 +11,7 @@ class Karyawan{
         this.id = id;
     }
     
-    private void info(){
+    public void info(){
         System.out.println("Nama : "+nama);
         System.out.println("ID   : "+id);
     }
@@ -36,5 +36,14 @@ class Admin extends Karyawan{
 public class DemoInheritance {
     public static void main(String[] args) {
         Dosen d1 = new Dosen();
+        d1.setId("D001");
+        d1.setNama("Obet");
+        d1.info();
+        System.out.println("====================");
+        
+        Satpam s1 = new Satpam();
+        s1.setId("S001");
+        s1.setNama("Budi");
+        s1.info();
     }
 }
