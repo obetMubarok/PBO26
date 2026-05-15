@@ -36,7 +36,7 @@ class Balok{
     
     
 }
-public class DemoBalok {
+public class DemoBalokTapaConstructor {
     public static void main(String[] args) {
         Balok balok1 = new Balok();
         balok1.setPanjang(6);
